@@ -18,6 +18,9 @@ const FormLogin = () => {
   return (
     <div>
       <form action="submit" onSubmit={handleSubmit}>
+        <h1>Bienvenue chez nous</h1>
+        <br />
+        <h2>connectez-vous</h2>
         <input
           onChange={handleChange}
           type="text"
