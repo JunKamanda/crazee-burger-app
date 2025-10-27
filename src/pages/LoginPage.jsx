@@ -1,4 +1,4 @@
-import Form from "../composants/Form";
+import FormLogin from "../composants/FormLogin";
 
 const LoginPage = () => {
   //state
@@ -10,7 +10,7 @@ const LoginPage = () => {
     <div>
       <h1>Bienvenue chez nous</h1>
       <h2>connectez-vous</h2>
-      <Form/>
+      <FormLogin/>
     </div>
   );
 };

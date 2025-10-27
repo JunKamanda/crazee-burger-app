@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const FormLogin = () => {
   //State
   const [prenom, setPrenom] = useState("");
 
@@ -31,4 +31,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormLogin;
