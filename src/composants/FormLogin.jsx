@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const FormLogin = () => {
   //State
   const [prenom, setPrenom] = useState("");
+  const navigate = useNavigate();
 
   //comportements
   const handleChange = (e) => {
@@ -11,7 +13,10 @@ const FormLogin = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Bonjour ${prenom}`);
+    //Redirige vers /order et passe le prenom
+    navigate("/order", {state:{prenom}});
+    // autre façon de faire
+    // navigate(`order/${prenom}`)
     setPrenom("");
   };
   //render
@@ -21,6 +26,7 @@ const FormLogin = () => {
         <h1>Bienvenue chez nous !</h1>
         <br />
         <h2>connectez-vous</h2>
+
         <input
           onChange={handleChange}
           type="text"
