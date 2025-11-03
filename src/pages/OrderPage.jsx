@@ -1,11 +1,13 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+// import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 const OrderPage = () => {
   //state
-  const location = useLocation();
-  const prenom = location.state?.prenom || "inconnu";
   const navigate = useNavigate();
+  const location = useLocation();
+  // const {prenom} = useParams();
+  const prenom = location.state?.prenom || "inconnu";
 
   //comportement
   const handleClick = ()=>{

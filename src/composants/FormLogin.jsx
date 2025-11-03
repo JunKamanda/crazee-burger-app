@@ -15,6 +15,8 @@ const FormLogin = () => {
     e.preventDefault();
     //Redirige vers /order et passe le prenom
     navigate("/order", {state:{prenom}});
+    // autre façon de faire
+    // navigate(`order/${prenom}`)
     setPrenom("");
   };
   //render
